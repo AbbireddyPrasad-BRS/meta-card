@@ -83,6 +83,24 @@ main {
     margin-bottom: 30px;
 }
 
+.visit-counter {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.visit-counter #visit-count {
+    color: #d4af37;
+    font-size: 1.1em;
+}
+
 .hero-content ol {
     text-align: left;
     display: inline-block;

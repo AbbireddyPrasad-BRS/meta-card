@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize visit counter
+    let visitCount = localStorage.getItem('visitCount') || 0;
+    visitCount = parseInt(visitCount) + 1;
+    localStorage.setItem('visitCount', visitCount);
+    document.getElementById('visit-count').textContent = visitCount;
+});
+
 document.getElementById('social-btn').addEventListener('click', function() {
     showForm('social');
 });
