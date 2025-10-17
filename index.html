@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Meta Card</div>
+        <nav>
+            <a href="#" id="nav-educational">Educational Card</a>
+            <a href="#" id="nav-social">Social Card</a>
+            <a href="#" id="nav-developer">Developer</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to Meta Card Generator</h1>
+                <p>Create personalized meta cards with QR codes linking to your social media and educational profiles. Enter your usernames, generate a downloadable card, and share your digital presence effortlessly.</p>
+                <h2>How to Use:</h2>
+                <ol>
+                    <li>Choose "Social Media Card" or "Educational Card".</li>
+                    <li>Enter your usernames for the respective platforms.</li>
+                    <li>Click "Generate Meta-Card" to create your card.</li>
+                    <li>Download the card and scan QR codes to access profiles.</li>
+                </ol>
+                <div id="selection">
+                    <button id="social-btn">Social Media Card</button>
+                    <button id="educational-btn">Educational Card</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-section" style="display: none;">
+            <div class="container">
+                <h1 id="form-title"></h1>
+                <form id="social-form" style="display: none;">
+                    <button id="back-social" class="back-btn">← Back</button>
+                    <h2>Social Media Accounts</h2>
+                    <label for="facebook">Facebook:</label>
+                    <input type="text" id="facebook" placeholder="username or profile ID">
+                    <label for="instagram">Instagram:</label>
+                    <input type="text" id="instagram" placeholder="username">
+                    <label for="snapchat">Snapchat:</label>
+                    <input type="text" id="snapchat" placeholder="username">
+                    <label for="twitter">Twitter/X:</label>
+                    <input type="text" id="twitter" placeholder="username">
+                    <button type="submit">Generate Meta-Card</button>
+                </form>
+                <form id="educational-form" style="display: none;">
+                    <button id="back-educational" class="back-btn">← Back</button>
+                    <h2>Educational Accounts</h2>
+                    <label for="codechef">CodeChef:</label>
+                    <input type="text" id="codechef" placeholder="username">
+                    <label for="geeksforgeeks">GeeksForGeeks:</label>
+                    <input type="text" id="geeksforgeeks" placeholder="username">
+                    <label for="github">GitHub:</label>
+                    <input type="text" id="github" placeholder="username">
+                    <label for="hackerrank">HackerRank:</label>
+                    <input type="text" id="hackerrank" placeholder="username">
+                    <label for="leetcode">LeetCode:</label>
+                    <input type="text" id="leetcode" placeholder="username">
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="text" id="linkedin" placeholder="username or profile ID">
+                    <button type="submit">Generate Meta-Card</button>
+                </form>
+                <div id="meta-card" class="meta-card" style="display: none;">
+                    <h2>Meta Card</h2>
+                    <div id="qr-container"></div>
+                    <button id="download-btn">Download Card</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="developer-section" style="display: none;">
+            <div class="container">
+                <h1>Developer</h1>
+                <div class="developer-card">
+                    <img src="dev-photo.jpg" alt="Developer Photo" class="developer-photo">
+                    <h2>Abbireddy VVSS Prasad</h2>
+                    <p>Full-Stack Developer and Creator of Meta Card Generator. Passionate about building innovative web applications that simplify digital interactions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Recommended: Use valid usernames for best results. Ensure accounts are public for QR links to work. For custom platforms, provide full URL if needed.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

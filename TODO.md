@@ -1,0 +1,35 @@
+# Meta Card Generator Update Plan
+
+## Tasks
+- [x] Delete unused files: details.html and details.js
+- [x] Update index.html: Add selection page with "Social Media Card" and "Educational Card" options, dynamic forms, and generate button
+- [x] Update script.js: Handle card type selection, form submission, generate QR codes with correct URLs, create ATM card-shaped div, add hover tooltips, implement download using html2canvas
+- [x] Update style.css: Style the ATM card, tooltips, and overall layout
+- [x] Make QR codes clickable to navigate to accounts
+- [x] Make meta-card height dynamic based on QR count
+- [x] Add back buttons to forms
+- [x] Apply glass effect theme with animations
+- [x] Add profile image to meta-card
+- [x] Require at least one username to generate card
+- [x] Add "Add New" for custom social media apps
+- [x] Arrange input fields in alphabetical order
+- [x] Add username validation to skip invalid entries
+- [x] Add account existence check for all platforms (using web scraping)
+- [x] Add mobile responsiveness for vertical input fields
+- [x] Fix account existence check to use HEAD request with no-cors mode
+- [x] Remove profile image from meta-card
+- [x] Style meta-card with modern premium dark themed gold blended color, "Meta Card" in bold gold text, rich class premium card appearance
+- [x] Arrange input fields vertically one after another
+- [x] Make back button small and positioned in corner
+- [x] Enable back navigation
+- [x] Reduce width of buttons (back, generate, add new)
+- [x] Move back button to the top of the container
+- [x] Display generate button and add new button in the center
+- [x] Add header with "Meta Card" logo on left and navbar on right ("Educational Card", "Social Card", "Developer")
+- [x] Create hero section with project description and instructions
+- [x] Add developer page with photo, name, and description
+- [x] Make navigation functional for all sections
+- [x] Add footer with recommendations
+- [x] Ensure mobile and desktop responsiveness
+- [x] Test the application: Open index.html, navigate using header links, view hero section, select card types, enter usernames, generate card, view developer page, verify responsiveness on mobile and desktop
+- [x] Make logo clickable to navigate to hero section
