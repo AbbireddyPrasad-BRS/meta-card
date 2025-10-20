@@ -237,8 +237,8 @@ function getUrl(platform, value) {
         twitter: `https://twitter.com/${value}`,
         linkedin: `https://linkedin.com/in/${value}`,
         github: `https://github.com/${value}`,
-        hackerrank: `https://hackerrank.com/${value}`,
-        geeksforgeeks: `https://geeksforgeeks.org/user/${value}`,
+        hackerrank: `https://www.hackerrank.com/${value}`,
+        geeksforgeeks: `https://auth.geeksforgeeks.org/user/${value}`,
         codechef: `https://codechef.com/users/${value}`,
         leetcode: `https://leetcode.com/${value}`,
         others: value.startsWith('http') ? value : `https://${value}`
